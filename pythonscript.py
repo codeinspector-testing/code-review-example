@@ -1,17 +1,21 @@
-import logging
-
-
 class Person:
+    """
+    This class models a person with their firstname and lastname.
+    """
     def __init__(self, firstname, lastname):
         self.firstname = firstname
         self.lastname = lastname
 
 
 def print_person(person):
+    """
+    Show the representation of a person as a string
+    :param person: the person to print
+    :return: a string that represent the person, None if not possible
+    """
     if not person:
         return None
-    else:
-        return "{0} {1}".format(person.firstname, person.lastname)
+    return "{0} {1}".format(person.firstname, person.lastname)
 
 
 p = Person("John", "Doe")
