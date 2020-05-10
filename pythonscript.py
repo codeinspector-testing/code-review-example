@@ -14,6 +14,10 @@ class Person:
         return "{0}, {1}".format(self.firstname, self.lastname)
 
     def is_correct(self):
+        """
+        return is a person is correctly formed
+        :return: true if all attributes are defined.
+        """
         return self.firstname is not None and self.lastname is not None
 
 
