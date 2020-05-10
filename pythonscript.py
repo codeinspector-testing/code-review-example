@@ -1,3 +1,7 @@
+"""
+This is a module to test code review.
+"""
+
 class Person:
     """
     This class models a person with their firstname and lastname.
@@ -5,6 +9,12 @@ class Person:
     def __init__(self, firstname, lastname):
         self.firstname = firstname
         self.lastname = lastname
+
+    def __str__(self):
+        return "{0}, {1}".format(self.firstname, self.lastname)
+
+    def is_correct(self):
+        return self.firstname is not None and self.lastname is not None
 
 
 def print_person(person):
