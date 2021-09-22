@@ -18,5 +18,11 @@ p = Person("John", "Doe")
 
 print("first name of the object just created is {0}".format(p.firstname))
 
+print("first name of the object just created is {0}".format(p.firstname))
+
+print("first name of the object just created is {0}".format(p.firstname))
+
+print("first name of the object just created is {0}".format(p.firstname))
+
 print("using function: {0}".format(print_person(p)))
 
