@@ -22,11 +22,10 @@ def average_age(persons: Optional[list[Person]]) -> Optional[int]:
         try:
             all_ages = list(map(lambda p: p.age, persons))
             return sum(all_ages) / len(all_ages)
-        except Exception:
+        except ZeroDivisionError:
             logging.error("error happened when computing the average")
             return None
     return None
-    print("computing all ages done")
 
 p1 = Person("John", "Doe", 51)
 p2 = Person("Luke", "Skywalker", 21)
